@@ -9,7 +9,7 @@
 #'
 #' @return la fonction renvoie le mot de bonjour
 #' @export
-dire_bonjour <- function(prenom){
+dire_bonjour <- function(prenom = "toi"){
   prenombis <- paste0(toupper(substr(prenom, 1, 1)), substr(prenom, 2, nchar(prenom)))
-  glue("Bonjour {prenombis} !")
+  glue("Bonjour {prenombis}")
 }
